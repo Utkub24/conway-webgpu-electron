@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <link href="./assets/main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <canvas></canvas>
+    <div class="button-list">
+      <button id="startSimBtn" type="button">Start</button>
+      <button id="pauseSimBtn" type="button">Pause</button>
+      <button id="resetSimBtn" type="button">Reset</button>
+      <button id="nextIterBtn" type="button">Next Iteration</button>
+    </div>
+  </div>
+  <script type="module" src="./src/renderer.ts"></script>
+  <script type="module" src="./src/webgpu.ts"></script>
+</body>
+
+</html>
