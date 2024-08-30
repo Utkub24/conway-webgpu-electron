@@ -8,6 +8,10 @@ function addButtonAnimation(): void {
   const buttons = document.querySelectorAll("button");
   for (let i = 0; i < buttons.length; i++) {
     let button = buttons[i];
+
+    if (!button.classList.contains('button-disabled'))
+      continue;
+
     button.addEventListener('click', (e) => {
       const disabledText = document.createElement('div');
       disabledText.className = 'unhappy-text';

@@ -11,14 +11,17 @@
   <div class="container">
     <canvas></canvas>
     <div class="button-list">
-      <button id="startSimBtn" type="button">Start</button>
-      <button id="pauseSimBtn" type="button">Pause</button>
-      <button id="resetSimBtn" type="button">Reset</button>
-      <button id="nextIterBtn" type="button">Next Iteration</button>
+      <button class="button-enabled" id="startSimBtn" type="button">Start</button>
+      <button class="button-enabled" id="pauseSimBtn" type="button">Pause</button>
+      <button class="button-enabled" id="resetSimBtn" type="button">Reset</button>
+      <button class="button-enabled" id="nextIterBtn" type="button">Next Iteration</button>
+    </div>
+    <div class="iteration-counter">
+      Iteration:<div class="num" id="counter_num">&nbsp;0</div>
     </div>
   </div>
   <script type="module" src="./src/renderer.ts"></script>
-  <script type="module" src="./src/webgpu.ts"></script>
+  <script type="module" src="./src/webgpu-controller.ts"></script>
 </body>
 
 </html>
